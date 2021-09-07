@@ -10,9 +10,9 @@ resources:
   #- apps/kube_prometheus_stack.yaml # Edit the file before applying!
   #- https://raw.githubusercontent.com/argoproj-labs/argocd-notifications/v1.1.1/manifests/install.yaml # ArgoCD Notifications
 
-  #patchesStrategicMerge:
-  #- overlays/argocd-cm.yaml
-  #- overlays/argocd-repo-server-deploy.yaml
+patchesStrategicMerge:
+- overlays/argocd-cm.yaml
+- overlays/argocd-repo-server-deploy.yaml
   #- https://raw.githubusercontent.com/argoproj-labs/argocd-notifications/v1.1.1/catalog/install.yaml # ArgoCD Notifications
   #- overlays/discord_notification.yaml
   #- overlays/webhook_notification.yaml
